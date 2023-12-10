@@ -37,10 +37,6 @@ body {
   overflow-x: hidden;
 }
 
-section {
-  min-height: 100vh;
-}
-
 ul,
 li {
   list-style: none;
@@ -114,7 +110,7 @@ li {
   background-image: url("../images/herobackground.svg");
   background-size: cover;
   background-position: center;
-  height: 100vh; /* Adjust as needed */
+  min-height: 100vh;
 
   &__overlay {
     position: absolute;
@@ -127,7 +123,7 @@ li {
       0,
       0,
       0,
-      0.75
+      0.6
     ); /* Adjust the alpha (last value) to control darkness */
   }
 
@@ -153,5 +149,137 @@ li {
   &__cta:hover,
   &__cta:focus {
     background: $primarynormalcolorhover;
+  }
+}
+
+.our-offer {
+  padding: 50px 0px;
+  margin-bottom: 20px;
+  &__heading {
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    color: $primarynormalcolor;
+  }
+  &__heading:hover,
+  &__heading:focus {
+    color: $primarynormalcolorhover;
+  }
+
+  &__subheading {
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    color: $greydarkercolor;
+  }
+
+  &__card {
+    border-radius: 6px;
+    background: $primarylightcoloractive;
+    padding: 30px 20px;
+    margin-bottom: 15px;
+    &-img-top {
+      width: 100px;
+      height: 100px;
+    }
+    &-title {
+      color: $greydarkercolor;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 48px */
+    }
+
+    &-text {
+      color: $greydarkercolor;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+}
+
+.about-us {
+  padding: 30px 0px;
+  margin-bottom: 30px;
+
+  &__heading {
+    color: $primarynormalcolor;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__subheading {
+    position: relative;
+    color: $greydarkercolor;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      width: 45%;
+      height: 4px;
+      background-color: $primarynormalcolor;
+    }
+  }
+
+  &__textcontainer {
+    position: relative;
+    padding: 20px 30px;
+    background-color: $primarynormalcolor;
+    border-radius: 6px;
+    color: $white-text-color;
+    margin-right: -50px;
+    width: 55%;
+
+    &-innercircle {
+      position: absolute;
+      top: 25px;
+      right: -120px;
+      height: 290px;
+      width: 290px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.26);
+    }
+    & p {
+      width: 85%;
+      font-family: Roboto;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: left;
+    }
+  }
+
+  &__imgcontainer {
+    &-innerrect {
+      height: 85%;
+      width: 1000%;
+      border: 2px solid $secondarynormalcolor;
+      border-left: none !important;
+    }
+    & img {
+      height: 80%;
+      position: relative;
+      margin-right: -113px;
+    }
   }
 }
