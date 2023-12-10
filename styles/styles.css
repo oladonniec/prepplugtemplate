@@ -17,6 +17,10 @@ li {
   text-decoration: none;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .navbar {
   background: white;
   border-bottom: 1px solid black;
@@ -223,4 +227,190 @@ li {
   height: 80%;
   position: relative;
   margin-right: -113px;
+}
+
+.reviews-and-ratings {
+  padding: 30px 0px;
+  margin-bottom: 30px;
+}
+.reviews-and-ratings__heading {
+  color: #424242;
+  text-align: center;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+.reviews-and-ratings__heading span {
+  color: #2e5caf;
+}
+.reviews-and-ratings__main-text {
+  color: #424242;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 60px */
+}
+.reviews-and-ratings__main-text span {
+  color: #555;
+}
+.reviews-and-ratings__carousel {
+  padding: 10px;
+  gap: 25px;
+  position: relative;
+}
+.reviews-and-ratings__carousel-item-card {
+  border-radius: 6px;
+  background: #a4bded;
+  padding: 40px 30px;
+  margin-bottom: 15px;
+}
+.reviews-and-ratings__carousel-item-card h6 {
+  color: #424242;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-left: 15px;
+}
+.reviews-and-ratings__carousel-item-card p {
+  color: #424242;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+.reviews-and-ratings__carousel-prev {
+  position: absolute;
+  top: 35%;
+  left: -20px;
+  cursor: pointer;
+}
+.reviews-and-ratings__carousel-next {
+  position: absolute;
+  top: 35%;
+  right: -20px;
+  cursor: pointer;
+}
+
+.contact-us {
+  padding: 30px 0px;
+  margin-bottom: 30px;
+}
+.contact-us__heading {
+  color: #2e5caf;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 60px */
+}
+.contact-us__subheading {
+  color: #424242;
+  font-family: Inter;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.contact-us__image {
+  height: 100%;
+  margin-right: -100px;
+  width: 70%;
+}
+.contact-us__image img {
+  height: 570px;
+  width: 100%;
+}
+.contact-us__formcontainer {
+  width: 50%;
+  background-color: #6b8bc6;
+  border-radius: 6px;
+  padding: 40px 30px;
+}
+.contact-us__formcontainer form {
+  padding: 20px 10px;
+  height: 100%;
+}
+.contact-us__formcontainer form label {
+  color: #515151;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+.contact-us__formcontainer form input, .contact-us__formcontainer form textarea {
+  border-radius: 8px;
+  border: 1px solid #becce6;
+  background: white;
+  padding: 10px 7px;
+}
+.contact-us__formcontainer form input.contact-us__submit {
+  background-color: #2e5caf;
+  padding: 10px 45px;
+  color: white;
+}
+.contact-us__formcontainer form input.contact-us__submit:hover, .contact-us__formcontainer form input.contact-us__submit:focus {
+  background-color: #29539e;
+}
+
+.latest-blog {
+  padding: 30px 0px;
+  margin-bottom: 30px;
+  background-color: #becce6;
+}
+.latest-blog__heading {
+  color: #424242;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 48px */
+}
+.latest-blog__card {
+  position: relative;
+  border-radius: 6px;
+  padding: 35px 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-end;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.latest-blog__card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(40%);
+  border-radius: 14px;
+}
+.latest-blog__card-body {
+  position: relative;
+  margin-top: 60px;
+  color: white;
+}
+.latest-blog__card-body-title {
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+}
+.latest-blog__card-body-text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
 }/*# sourceMappingURL=styles.css.map */

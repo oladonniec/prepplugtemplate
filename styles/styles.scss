@@ -22,7 +22,9 @@ $secondarylightcolorhover: #dff3ec;
 $secondarylightcoloractive: #bce5d7;
 
 $greydarkercolor: #424242;
+$greydarkactivecolor: #555;
 $greylightcoloractive: #ebebeb;
+$foundationgreyscaledarker: #515151;
 
 *,
 *::before,
@@ -41,6 +43,10 @@ ul,
 li {
   list-style: none;
   text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .navbar {
@@ -280,6 +286,221 @@ li {
       height: 80%;
       position: relative;
       margin-right: -113px;
+    }
+  }
+}
+
+.reviews-and-ratings {
+  padding: 30px 0px;
+  margin-bottom: 30px;
+
+  &__heading {
+    color: $greydarkercolor;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 20px;
+
+    span {
+      color: $primarynormalcolor;
+    }
+  }
+
+  &__main-text {
+    color: $greydarkercolor;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 60px */
+
+    span {
+      color: $greydarkactivecolor;
+    }
+  }
+
+  &__carousel {
+    padding: 10px;
+    gap: 25px;
+    position: relative;
+
+    &-item {
+      &-card {
+        border-radius: 6px;
+        background: #a4bded;
+        padding: 40px 30px;
+        margin-bottom: 15px;
+
+        & h6 {
+          color: $greydarkercolor;
+          text-align: center;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%;
+          margin-left: 15px;
+        }
+
+        & p {
+          color: $greydarkercolor;
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%; /* 24px */
+        }
+      }
+    }
+
+    &-prev {
+      position: absolute;
+      top: 35%;
+      left: -20px;
+      cursor: pointer;
+    }
+
+    &-next {
+      position: absolute;
+      top: 35%;
+      right: -20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.contact-us {
+  padding: 30px 0px;
+  margin-bottom: 30px;
+
+  &__heading {
+    color: $primarynormalcolor;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 60px */
+  }
+
+  &__subheading {
+    color: $greydarkercolor;
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__image {
+    height: 100%;
+    margin-right: -100px;
+    width: 70%;
+
+    & img {
+      height: 570px;
+      width: 100%;
+    }
+  }
+
+  &__formcontainer {
+    width: 50%;
+    background-color: #6b8bc6;
+    border-radius: 6px;
+    padding: 40px 30px;
+
+    & form {
+      padding: 20px 10px;
+      height: 100%;
+
+      & label {
+        color: $foundationgreyscaledarker;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+      }
+
+      & input,
+      & textarea {
+        border-radius: 8px;
+        border: 1px solid $primarylightcoloractive;
+        background: $main-bg-color;
+        padding: 10px 7px;
+      }
+
+      & input.contact-us__submit {
+        background-color: $primarynormalcolor;
+        padding: 10px 45px;
+        color: $white-text-color;
+
+        &:hover,
+        &:focus {
+          background-color: $primarynormalcolorhover;
+        }
+      }
+    }
+  }
+}
+
+.latest-blog {
+  padding: 30px 0px;
+  margin-bottom: 30px;
+  background-color: $primarylightcoloractive;
+
+  &__heading {
+    color: $greydarkercolor;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 48px */
+  }
+
+  &__card {
+    position: relative;
+    border-radius: 6px;
+    padding: 35px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-end;
+    height: fit-content;
+
+    &-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      filter: brightness(40%);
+      border-radius: 14px;
+    }
+
+    &-body {
+      position: relative;
+      margin-top: 60px;
+      color: $white-text-color;
+
+      &-title {
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 36px */
+      }
+
+      &-text {
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+      }
     }
   }
 }
