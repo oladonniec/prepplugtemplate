@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar {
+  background: white;
+  border-bottom: 1px solid black;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar .navcontainer {
+  width: 60% !important;
+}
+.navbar-nav {
+  flex-direction: row !important;
+  gap: 25px;
+  padding: 0px 30px;
+}
+.navbar-nav .nav-item {
+  margin: 0px 10px;
+  color: #424242 !important;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
+}
+.navbar-nav .nav-item a {
+  color: #424242 !important;
+}
+.navbar-nav .nav-item a.active {
+  color: #2e5caf !important;
+}
+.navbar-nav.cta {
+  margin-left: 20px;
+}
+.navbar-nav.cta button {
+  width: 100px;
+}
+.navbar-nav.cta .btn-signin {
+  border-radius: 6px;
+  border: 1px solid #2e5caf;
+}
+.navbar-nav.cta .btn-signup {
+  border-radius: 6px;
+  background-color: #2e5caf;
+  color: white;
+}
+.navbar-nav.cta .btn-signup:hover, .navbar-nav.cta .btn-signup:focus {
+  background-color: #29539e;
+}
+
+.hero-section {
+  position: relative;
+  background-image: url("../images/herobackground.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust as needed */
+}
+.hero-section__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Adjust the alpha (last value) to control darkness */
+}
+.hero-section__text {
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: #ebebeb;
+  margin-top: 100px;
+}
+.hero-section__cta {
+  border-radius: 6px;
+  background: #2e5caf;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 35px;
+  color: white;
+  margin-top: 20px;
+}
+.hero-section__cta:hover, .hero-section__cta:focus {
+  background: #29539e;
+}/*# sourceMappingURL=styles.css.map */
