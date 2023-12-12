@@ -504,3 +504,62 @@ li {
     }
   }
 }
+
+.news-letter {
+  padding: 30px 0px;
+  margin-bottom: 30px;
+
+  &__content {
+    padding: 30px 45px;
+    background-color: rgba(46, 92, 175, 0.71);
+    border-radius: 6px;
+
+    &-heading {
+      color: $greydarkercolor;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 48px */
+    }
+
+    &-form {
+      padding: 5px;
+      width: 30rem;
+
+      &-input {
+        padding: 18px 15px;
+        width: 97%;
+        border: 0.5px solid #989797;
+        border-radius: 6px;
+        background: #fff;
+        box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      &-submit {
+        display: inline-block;
+        margin-left: -60px;
+        background-color: $primarynormalcolor;
+        border-radius: 6px;
+        padding: 3px 2px;
+        transform: translateY(-2.3px);
+      }
+    }
+  }
+}
+
+.footer-section {
+  padding: 30px 0px;
+  background-color: $primarydarkcolor;
+  color: #fdfdfd;
+
+  &__contents {
+    flex-wrap: wrap;
+
+    &-logoaanddesc {
+      & img {
+        width: 50px;
+      }
+    }
+  }
+}
